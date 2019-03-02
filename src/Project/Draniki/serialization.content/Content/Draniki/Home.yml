@@ -13,6 +13,10 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
         l="{3012B863-D1A7-4652-A4AA-9615CBE3E72D}">
+        <p
+          uid="{C3D392EC-4610-4764-8179-8C0A037241B8}"
+          key="main"
+          md="{35CDFFE4-8B5F-452C-9C16-A5F993208B36}" />
         <r
           id="{9C3760EA-5278-4840-A8AD-36EDD35797F8}"
           ph="main"

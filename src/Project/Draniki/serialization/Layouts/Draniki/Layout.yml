@@ -4,6 +4,11 @@ Parent: "e6a44ebf-29b9-43aa-8218-c2afd8045ad8"
 Template: "35c61e90-47dd-43dd-83a8-d1c4d5119720"
 Path: /sitecore/layout/Layouts/Draniki/Project/Draniki/Layout
 DB: master
+SharedFields:
+- ID: "80334869-86dc-4472-aa89-44cf1b2f6c9b"
+  Hint: Placeholders
+  Type: Treelist
+  Value: "{35CDFFE4-8B5F-452C-9C16-A5F993208B36}"
 Languages:
 - Language: en
   Versions:
