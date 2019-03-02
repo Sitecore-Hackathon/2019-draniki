@@ -21,7 +21,8 @@ Sitecore.Parameters.InitParams(
     scSiteUrl: "http://sc9.local", // default URL exposed from the box
     publishingTargetDir: "\\\\sc9.local\\c$\\inetpub\\wwwroot\\sc9.local",
     xUnitTestsCoverageExcludeAttributeFilters: "*ExcludeFromCodeCoverage*",
-    xUnitTestsCoverageExcludeFileFilters: "*.Generated.cs"
+    xUnitTestsCoverageExcludeFileFilters: "*.Generated.cs",
+    unicornConfigPath: "\\\\192.168.50.6\\c$\\inetpub\\wwwroot\\sc9.local\\App_Config\\Include\\Foundation\\Foundation.Serialization.Unicorn.config"
 );
 
 Task("000-Clean")

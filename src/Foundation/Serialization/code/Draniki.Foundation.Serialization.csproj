@@ -221,6 +221,7 @@
     <Content Include="App_Config\Include\Foundation\a.Unicorn\Unicorn.UI.DeployedContentEditorWarnings.config.disabled" />
     <Content Include="App_Config\Include\Foundation\a.Unicorn\Unicorn.UI.IdentityServer.config.disabled" />
     <Content Include="App_Config\Include\Foundation\a.Unicorn\Unicorn.zSharedSecret.config.example" />
+    <Content Include="App_Config\Include\Foundation\Foundation.Serialization.Unicorn.config" />
     <None Include="packages.config" />
     <Content Include="App_Config\Include\Foundation\Foundation.Serialization.config" />
     <Content Include="App_Config\Include\Foundation\Foundation.Serialization.Settings.config" />
