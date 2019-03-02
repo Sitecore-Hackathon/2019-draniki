@@ -70,27 +70,31 @@ module.exports.toPropertyType = function (typeName, id) {
     case 'treelist':
     case 'treelistex':
     case 'treelist descriptive':
+    case 'treelist queryable':
     case 'checklist':
     case 'multilist with search':
     case 'multilist':
       return 'ReactJssModule.ItemList<ReactJssModule.BaseDataSourceItem>';
     case 'grouped droplink':
     case 'droplink':
+    case 'custom droplink':
     case 'lookup':
     case 'droptree':
     case 'reference':
     case 'tree':
       return 'ReactJssModule.Item<ReactJssModule.BaseDataSourceItem>';
     case 'file':
-      return `{} /* UNKNOWN TYPE: ${typeName} */`;
+      return 'ReactJssModule.FileField';
     case 'image':
       return 'ReactJssModule.ImageField';
+    case 'custom general link':
     case 'general link':
     case 'general link with search':
       return 'ReactJssModule.LinkField';
+    case 'rich text':
+      return 'ReactJssModule.RichTextField';
     case 'password':
     case 'icon':
-    case 'rich text':
     case 'html':
     case 'single-line text':
     case 'multi-line text':
@@ -100,6 +104,7 @@ module.exports.toPropertyType = function (typeName, id) {
     case 'droplist':
     case 'grouped droplist':
     case 'valuelookup':
+    case 'time zone':
     case 'name value list':
       return 'ReactJssModule.TextField';
     case 'attachment':

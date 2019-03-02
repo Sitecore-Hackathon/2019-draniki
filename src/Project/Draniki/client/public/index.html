@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
 
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -15,21 +14,28 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
+  <% for (key in htmlWebpackPlugin.files.css) { %>
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[key] %>" />
+  <% } %>
+</head>
 
-    <script type="application/json" id="__JSS_STATE__">null</script>
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root"></div>
 
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <script type="text/javascript">
+    window.__JSS_STATE__=null;
+  </script>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-    -->
-  </body>
+  <% for (key in htmlWebpackPlugin.files.js) {
+    if (htmlWebpackPlugin.files.js[key].indexOf('main') !== -1) { %>
+      <script type="text/javascript" data-search-pseudo-elements src="<%= htmlWebpackPlugin.files.js[key] %>"></script>
+      <% continue; %>
+    <% } %>
+      <script type="text/javascript" src="<%= htmlWebpackPlugin.files.js[key] %>"></script>
+  <% } %>
+</body>
+
 </html>

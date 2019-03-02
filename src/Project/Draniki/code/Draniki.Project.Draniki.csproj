@@ -241,6 +241,7 @@
   <ItemGroup>
     <Content Include="codegeneration.tmpl" />
     <Content Include="App_Config\Include\Project\Draniki.Project.Draniki.Site.config" />
+    <Content Include="dist/**/*.*" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -316,7 +317,7 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\..\packages\OctoPack.3.6.2\build\OctoPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\OctoPack.3.6.2\build\OctoPack.targets'))" />
+    <!--<Error Condition="!Exists('..\..\..\packages\OctoPack.3.6.2\build\OctoPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\OctoPack.3.6.2\build\OctoPack.targets'))" />-->
   </Target>
   <Import Project="..\..\..\packages\OctoPack.3.6.2\build\OctoPack.targets" Condition="Exists('..\..\..\packages\OctoPack.3.6.2\build\OctoPack.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
