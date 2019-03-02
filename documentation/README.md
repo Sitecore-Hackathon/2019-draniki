@@ -14,6 +14,10 @@ The module aims to bring user experience of the Sitecore website to the new leve
 Using verbal communication channel with Alexa application the components on the website can reflect the requests of the user and change there presentation together with behaviour.
 The module presents just a small bit of what can be done through the voice operations: potential is to have commerce experience on the website using just verbal communication - review and buy products, view articles, play videos and ets.
 
+## Module Architecture
+
+![diagram](images/principal-enterprise-architectural-diagram.png?raw=true "diagram")
+
 ## Pre-requisites
 
 * VirtualBox 5.2.4+ - https://www.virtualbox.org/wiki/Downloads
