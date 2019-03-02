@@ -14,9 +14,6 @@ namespace Draniki.Project.Draniki.Models
 
     public class Action
     {
-        [JsonProperty("id")]
-        public string Id { get; set; }
-
         [JsonProperty("gameState")]
         public string State { get; set; }
 
@@ -29,19 +26,19 @@ namespace Draniki.Project.Draniki.Models
 
     public class Command
     {
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("type")]
+        public string Type { get; set; }
 
         [JsonProperty("timestamp")]
         public string Timestamp { get; set; }
 
         [JsonProperty("parameters")]
-        public Parameter Parameters { get; set; }
+        public List<Parameter> Parameters { get; set; }
     }
 
     public class Parameter
     {
-        [JsonProperty("type")]
-        public string Type { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
     }
 }
