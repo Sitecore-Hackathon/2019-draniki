@@ -4,7 +4,7 @@ VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Draniki", "Draniki", "{A6678371-B9A3-4A15-B143-878827FEFD36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Project.Draniki", "Project\Draniki\code\Draniki.Project.Draniki.csproj", "{346BAB60-0E57-45C1-8A20-F283A8BF44C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Project.Draniki", "Project\Draniki\code\Draniki.Project.Draniki.csproj", "{2DB5AC63-5EEF-4B76-B1AB-0D2D94A6F8C2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{DF3B36CF-6D1C-415A-8115-C806AAE79DB9}"
 	ProjectSection(SolutionItems) = preProject
@@ -23,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{8B6B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{D7471233-EE41-4080-8C58-12D5033C644A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Foundation.Serialization", "Foundation\Serialization\code\Draniki.Foundation.Serialization.csproj", "{BA492296-6396-413B-900B-AA9904768EF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Foundation.Serialization", "Foundation\Serialization\code\Draniki.Foundation.Serialization.csproj", "{91E74679-2DCF-45A9-9EA6-AB3B9C2774E5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{655BAECA-6D12-436C-BCAF-91A2F8EEEF25}"
 EndProject
@@ -31,13 +31,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serializat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GlassMapper", "GlassMapper", "{859BF338-D2DE-405E-BCB5-08125EB6E465}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Foundation.DependencyInjection", "Foundation\DependencyInjection\code\Draniki.Foundation.DependencyInjection.csproj", "{A5A4DCEB-88ED-4B5F-A06D-DBCBC828D45F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Foundation.DependencyInjection", "Foundation\DependencyInjection\code\Draniki.Foundation.DependencyInjection.csproj", "{A3BB9326-2D8D-4370-9B7D-3A4CCD939F2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Foundation.GlassMapper", "Foundation\GlassMapper\code\Draniki.Foundation.GlassMapper.csproj", "{0044B0CA-ABE2-4365-B1B2-1E347993B4AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Foundation.GlassMapper", "Foundation\GlassMapper\code\Draniki.Foundation.GlassMapper.csproj", "{6689D3AD-2D91-441C-9A11-82EC09B74332}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{7F113E29-7E16-4F09-B23D-DBD653AA62D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Project.Shared", "Project\Shared\code\Draniki.Project.Shared.csproj", "{63DDE5EF-8C69-4897-90B6-504CBEE698FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Project.Shared", "Project\Shared\code\Draniki.Project.Shared.csproj", "{B15FB4E9-4007-46C0-8882-A5ECCF5B9C9E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{8B3A5382-3A66-4956-A7F7-2241CCBA6401}"
 	ProjectSection(SolutionItems) = preProject
@@ -55,51 +55,61 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		cake.config = cake.config
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWS", "AWS", "{1CAA69DF-8E56-41BD-BCD0-0F0B0E8CC9DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Feature.AWS", "Feature\AWS\code\Draniki.Feature.AWS\Draniki.Feature.AWS.csproj", "{3133E3DA-CA36-498D-9B02-3D692D570432}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{346BAB60-0E57-45C1-8A20-F283A8BF44C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{346BAB60-0E57-45C1-8A20-F283A8BF44C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{346BAB60-0E57-45C1-8A20-F283A8BF44C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{346BAB60-0E57-45C1-8A20-F283A8BF44C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA492296-6396-413B-900B-AA9904768EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA492296-6396-413B-900B-AA9904768EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA492296-6396-413B-900B-AA9904768EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA492296-6396-413B-900B-AA9904768EF1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5A4DCEB-88ED-4B5F-A06D-DBCBC828D45F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5A4DCEB-88ED-4B5F-A06D-DBCBC828D45F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5A4DCEB-88ED-4B5F-A06D-DBCBC828D45F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5A4DCEB-88ED-4B5F-A06D-DBCBC828D45F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0044B0CA-ABE2-4365-B1B2-1E347993B4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0044B0CA-ABE2-4365-B1B2-1E347993B4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0044B0CA-ABE2-4365-B1B2-1E347993B4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0044B0CA-ABE2-4365-B1B2-1E347993B4AA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{63DDE5EF-8C69-4897-90B6-504CBEE698FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63DDE5EF-8C69-4897-90B6-504CBEE698FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63DDE5EF-8C69-4897-90B6-504CBEE698FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63DDE5EF-8C69-4897-90B6-504CBEE698FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB5AC63-5EEF-4B76-B1AB-0D2D94A6F8C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB5AC63-5EEF-4B76-B1AB-0D2D94A6F8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB5AC63-5EEF-4B76-B1AB-0D2D94A6F8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB5AC63-5EEF-4B76-B1AB-0D2D94A6F8C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E74679-2DCF-45A9-9EA6-AB3B9C2774E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E74679-2DCF-45A9-9EA6-AB3B9C2774E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E74679-2DCF-45A9-9EA6-AB3B9C2774E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E74679-2DCF-45A9-9EA6-AB3B9C2774E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3BB9326-2D8D-4370-9B7D-3A4CCD939F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3BB9326-2D8D-4370-9B7D-3A4CCD939F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3BB9326-2D8D-4370-9B7D-3A4CCD939F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3BB9326-2D8D-4370-9B7D-3A4CCD939F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6689D3AD-2D91-441C-9A11-82EC09B74332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6689D3AD-2D91-441C-9A11-82EC09B74332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6689D3AD-2D91-441C-9A11-82EC09B74332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6689D3AD-2D91-441C-9A11-82EC09B74332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B15FB4E9-4007-46C0-8882-A5ECCF5B9C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B15FB4E9-4007-46C0-8882-A5ECCF5B9C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B15FB4E9-4007-46C0-8882-A5ECCF5B9C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B15FB4E9-4007-46C0-8882-A5ECCF5B9C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3133E3DA-CA36-498D-9B02-3D692D570432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3133E3DA-CA36-498D-9B02-3D692D570432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3133E3DA-CA36-498D-9B02-3D692D570432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3133E3DA-CA36-498D-9B02-3D692D570432}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A6678371-B9A3-4A15-B143-878827FEFD36} = {D7471233-EE41-4080-8C58-12D5033C644A}
-		{346BAB60-0E57-45C1-8A20-F283A8BF44C8} = {A6678371-B9A3-4A15-B143-878827FEFD36}
-		{BA492296-6396-413B-900B-AA9904768EF1} = {3217684E-948F-4CF1-8727-0A3E497DEA19}
+		{2DB5AC63-5EEF-4B76-B1AB-0D2D94A6F8C2} = {A6678371-B9A3-4A15-B143-878827FEFD36}
+		{91E74679-2DCF-45A9-9EA6-AB3B9C2774E5} = {3217684E-948F-4CF1-8727-0A3E497DEA19}
 		{655BAECA-6D12-436C-BCAF-91A2F8EEEF25} = {D70DA070-FACF-45F0-B63F-22766D1E1D3E}
 		{3217684E-948F-4CF1-8727-0A3E497DEA19} = {D70DA070-FACF-45F0-B63F-22766D1E1D3E}
 		{859BF338-D2DE-405E-BCB5-08125EB6E465} = {D70DA070-FACF-45F0-B63F-22766D1E1D3E}
-		{A5A4DCEB-88ED-4B5F-A06D-DBCBC828D45F} = {655BAECA-6D12-436C-BCAF-91A2F8EEEF25}
-		{0044B0CA-ABE2-4365-B1B2-1E347993B4AA} = {859BF338-D2DE-405E-BCB5-08125EB6E465}
+		{A3BB9326-2D8D-4370-9B7D-3A4CCD939F2D} = {655BAECA-6D12-436C-BCAF-91A2F8EEEF25}
+		{6689D3AD-2D91-441C-9A11-82EC09B74332} = {859BF338-D2DE-405E-BCB5-08125EB6E465}
 		{7F113E29-7E16-4F09-B23D-DBD653AA62D9} = {D7471233-EE41-4080-8C58-12D5033C644A}
-		{63DDE5EF-8C69-4897-90B6-504CBEE698FD} = {7F113E29-7E16-4F09-B23D-DBD653AA62D9}
+		{B15FB4E9-4007-46C0-8882-A5ECCF5B9C9E} = {7F113E29-7E16-4F09-B23D-DBD653AA62D9}
 		{00AF7430-36F8-4058-8632-7A7518D0476E} = {8B3A5382-3A66-4956-A7F7-2241CCBA6401}
+		{1CAA69DF-8E56-41BD-BCD0-0F0B0E8CC9DD} = {8B6B8128-AD7B-4331-9DC0-0AFE37FC45E1}
+		{3133E3DA-CA36-498D-9B02-3D692D570432} = {1CAA69DF-8E56-41BD-BCD0-0F0B0E8CC9DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {95FD0DB7-903B-4B29-9409-FDAEB8BE8F71}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal
