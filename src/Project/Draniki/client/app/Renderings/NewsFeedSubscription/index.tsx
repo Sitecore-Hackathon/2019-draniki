@@ -1,47 +1,75 @@
 import { Text } from '@sitecore-jss/sitecore-jss-react';
-import * as React from 'react';
+import React from 'react';
+import { Subscription } from 'react-apollo';
 
 import Button from '@material-ui/core/Button';
-import { withStyles, WithStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import Typography from '@material-ui/core/Typography';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import Slide from '@material-ui/core/Slide';
 
 import { NewsFeedSubscriptionProps } from './models';
+import newsFeedSubscription from './newsFeedSubscription.graphql';
 
-const styles = {
-  form: {
-    display: 'flex',
-    flexDirection: 'column',
-    margin: '25px 0;',
-    maxWidth: '200px',
-  },
-  input: {
-    marginTop: '10px',
-  },
-  submitButton: {
-    marginTop: '10px',
-  },
+const Transition = (props: any) => {
+  return <Slide direction="up" {...props} />;
 };
 
-export const NewsFeedSubscription = withStyles(styles as any)(
-  ({ classes, fields }: NewsFeedSubscriptionProps & WithStyles) => {
+export interface NewsFeedSubscriptionDialogState {
+  open: boolean;
+}
+export class NewsFeedSubscriptionDialog extends React.Component<
+  NewsFeedSubscriptionProps,
+  NewsFeedSubscriptionDialogState
+> {
+  constructor(props: any) {
+    super(props);
+
+    this.state = {
+      open: false,
+    };
+  }
+
+  public render() {
+    const { fields } = this.props;
     return (
-      <form className={classes.form} noValidate={true} autoComplete="off">
-        <Typography variant="h5" component="h2">
-          <Text field={fields.Title} />
-        </Typography>
-        <TextField
-          className={classes.input}
-          id="standard-name"
-          label={fields['Email Label'].value}
-          //   value={this.state.name}
-          //   onChange={this.handleChange('name')}
-          // margin="normal"
-        />
-        <Button className={classes.submitButton} variant="contained" color="primary">
-          Subscribe!
-        </Button>
-      </form>
+      <Subscription subscription={newsFeedSubscription}>
+        {() => {
+          return (
+            <Dialog
+              open={this.state.open}
+              TransitionComponent={Transition}
+              keepMounted={true}
+              onClose={this.handleClose}
+              aria-labelledby="alert-dialog-slide-title"
+              aria-describedby="alert-dialog-slide-description"
+            >
+              <DialogTitle id="alert-dialog-slide-title">
+                <Text field={fields.Title} />
+              </DialogTitle>
+              <DialogContent>
+                <DialogContentText id="alert-dialog-slide-description">
+                  <Text field={fields['Email Label']} />
+                </DialogContentText>
+              </DialogContent>
+              <DialogActions>
+                <Button onClick={this.handleClose} color="primary">
+                  Disagree
+                </Button>
+                <Button onClick={this.handleClose} color="primary">
+                  Agree
+                </Button>
+              </DialogActions>
+            </Dialog>
+          );
+        }}
+      </Subscription>
     );
   }
-);
+
+  private handleClose() {
+    this.setState({ open: false });
+  }
+}

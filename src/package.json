@@ -30,6 +30,7 @@
     "apollo-link-context": "^1.0.12",
     "apollo-link-error": "^1.1.0",
     "apollo-link-http": "^1.5.4",
+    "apollo-link-ws": "^1.0.14",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "connected-react-router": "^5.0.1",
@@ -49,6 +50,7 @@
     "redux": "^4.0.0",
     "redux-actions": "^2.6.1",
     "redux-saga": "^0.16.0",
+    "subscriptions-transport-ws": "^0.9.15",
     "whatwg-fetch": "^2.0.4"
   },
   "devDependencies": {
@@ -67,6 +69,7 @@
     "@types/react-redux": "^6.0.5",
     "@types/recompose": "^0.30.3",
     "@types/redux-actions": "^2.3.1",
+    "@types/ws": "^6.0.1",
     "autoprefixer": "^9.0.2",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
