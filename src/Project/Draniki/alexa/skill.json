@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Manage you website experience with Alexa",
+          "examplePhrases": [
+            "Alexa open draniki",
+            "Alexa ask draniki to change theme {string}"
+          ],
+          "name": "draniki",
+          "description": ""
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "ask-custom-alexa-default"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

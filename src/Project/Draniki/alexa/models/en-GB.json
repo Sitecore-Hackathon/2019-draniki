@@ -1,0 +1,42 @@
+{
+    "interactionModel": {
+      "languageModel": {
+        "invocationName": "draniki",
+          "intents": [
+          {
+            "name": "AMAZON.CancelIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.HelpIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.StopIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.YesIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.NoIntent",
+            "samples": []
+          },
+          {
+            "name": "ChangeThemeIntent",
+            "samples": [
+              "change theme to {themeName}",
+              "set current theme to {themeName}"
+            ],
+            "slots": [{ "name": "themeName", "type": "AMAZON.SearchQuery" }]
+          },
+          {
+            "name": "SubscribeIntent",
+            "samples": [ "please subscribe to news feed with {email}" ],
+            "slots": [{ "name": "email", "type": "AMAZON.SearchQuery" }]
+          }
+        ]
+      }
+    }
+  }
