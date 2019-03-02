@@ -19,6 +19,7 @@ const Transition = (props: any) => {
 
 export interface NewsFeedSubscriptionDialogState {
   open: boolean;
+  email: string;
 }
 export class NewsFeedSubscriptionDialog extends React.Component<
   NewsFeedSubscriptionProps,
@@ -28,15 +29,19 @@ export class NewsFeedSubscriptionDialog extends React.Component<
     super(props);
 
     this.state = {
+      email: '',
       open: false,
     };
+
+    this.onSubscriptionData = this.onSubscriptionData.bind(this);
+    this.handleClose = this.handleClose.bind(this);
   }
 
   public render() {
     const { fields } = this.props;
     return (
-      <Subscription subscription={newsFeedSubscription}>
-        {() => {
+      <Subscription subscription={newsFeedSubscription} onSubscriptionData={this.onSubscriptionData}>
+        {({ data, loading }) => {
           return (
             <Dialog
               open={this.state.open}
@@ -52,6 +57,7 @@ export class NewsFeedSubscriptionDialog extends React.Component<
               <DialogContent>
                 <DialogContentText id="alert-dialog-slide-description">
                   <Text field={fields['Email Label']} />
+                  <b>: {this.state.email}</b>
                 </DialogContentText>
               </DialogContent>
               <DialogActions>
@@ -71,5 +77,19 @@ export class NewsFeedSubscriptionDialog extends React.Component<
 
   private handleClose() {
     this.setState({ open: false });
+  }
+
+  private onSubscriptionData({ subscriptionData }: any) {
+    const open =
+      !!subscriptionData.data &&
+      !!subscriptionData.data.visualizationSubscription.subscriptionEmailChanged &&
+      subscriptionData.data.visualizationSubscription.subscriptionEmailChanged !== this.state.email;
+
+    if (open) {
+      this.setState({
+        email: subscriptionData.data.visualizationSubscription.subscriptionEmailChanged,
+        open,
+      });
+    }
   }
 }

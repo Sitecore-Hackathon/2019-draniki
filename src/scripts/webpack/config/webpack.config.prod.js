@@ -331,7 +331,7 @@ module.exports = {
     // And we have same keys
     new webpack.DefinePlugin({
       ...env.stringified,
-      'process.env.API_KEY': JSON.stringify('{D24C87E5-C517-4DA1-8FD3-031439D00014}'),
+      'process.env.API_KEY': JSON.stringify('{9D34EC07-B4CE-4283-B037-C215EFE3EA88}'),
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output

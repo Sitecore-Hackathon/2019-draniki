@@ -1,5 +1,5 @@
 subscription onThemeChanged {
   visualizationSubscription {
-    themeChanged
+    subscriptionEmailChanged
   }
 }
