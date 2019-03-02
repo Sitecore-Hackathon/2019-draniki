@@ -21,10 +21,6 @@
     <httpModules xdt:Transform="Remove" />
   </system.web>
   <runtime>
-    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-      <dependentAssembly xdt:Locator="Condition(23)" xdt:Transform="Remove" />
-      <dependentAssembly xdt:Locator="Condition(22)" xdt:Transform="Remove" />
-    </assemblyBinding>
   </runtime>
   <system.diagnostics xdt:Transform="Remove" />
   <packageInstallation enabled="true" allowRemote="true" allowPackageStreaming="false" recordInstallationHistory="true" xdt:Transform="Insert" />
