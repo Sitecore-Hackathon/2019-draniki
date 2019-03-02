@@ -23,14 +23,14 @@
 
         private string ResolveMessage(ResolveFieldContext context)
         {
-            var message = VisualizationModel.Singleton.Theme;
+            var message = VisualizationModel.GetCurrent().Theme;
 
             return message;
         }
 
         private IObservable<string> Subscribe(ResolveEventStreamContext context)
         {
-            return VisualizationModel.Singleton.ThemeObservable;
+            return VisualizationModel.GetCurrent().ThemeObservable;
         }
     }
 }

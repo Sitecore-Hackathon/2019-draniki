@@ -258,17 +258,21 @@
     <Compile Include="GraphQL\VisualizationModel.cs" />
     <Compile Include="GraphQL\GraphTypes\VisualizationSubscriptionsGraphType.cs" />
     <Compile Include="GraphQL\VisualizationSchemaProvider.cs" />
+    <Compile Include="Services\UpdateDataJob.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="codegeneration.tmpl" />
     <Content Include="App_Config\Include\Project\Draniki.Project.Draniki.Site.config" />
     <Content Include="dist/**/*.*" />
+    <Content Include="App_Config\Include\Project\Draniki.Project.Draniki.Jobs.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Temp\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
     <Folder Include="Views\Draniki\" />
   </ItemGroup>
   <ItemGroup>

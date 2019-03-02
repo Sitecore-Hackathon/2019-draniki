@@ -15,7 +15,7 @@
 
         protected override IObservable<VisualizationModel> Resolve(ResolveEventStreamContext context)
         {
-            return VisualizationModel.Singleton.ModelObservable;
+            return VisualizationModel.GetCurrent().ModelObservable;
         }
     }
 }

@@ -13,7 +13,7 @@
 
         protected override VisualizationModel Resolve(ResolveFieldContext context)
         {
-            return VisualizationModel.Singleton;
+            return VisualizationModel.GetCurrent();
         }
     }
 }

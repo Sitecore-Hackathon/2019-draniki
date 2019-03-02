@@ -36,7 +36,7 @@ Task("001-Restore")
     ;
 
 Task("002-Build")
-    .IsDependentOn(Sitecore.Tasks.GenerateCodeTaskName)
+    //.IsDependentOn(Sitecore.Tasks.GenerateCodeTaskName)
     .IsDependentOn(Sitecore.Tasks.BuildClientCodeTaskName)
     .IsDependentOn(Sitecore.Tasks.BuildServerCodeTaskName)
     ;
@@ -50,8 +50,8 @@ Task("003-Tests")
 Task("004-Packages")
     //.IsDependentOn(Sitecore.Tasks.CopyShipFilesTaskName)
     //.IsDependentOn(Sitecore.Tasks.CopySpeRemotingFilesTaskName)
-    //.IsDependentOn(Sitecore.Tasks.PrepareWebConfigTask)
-    .IsDependentOn(Sitecore.Tasks.RunPackagesInstallationTask)
+    .IsDependentOn(Sitecore.Tasks.PrepareWebConfigTask)
+    //.IsDependentOn(Sitecore.Tasks.RunPackagesInstallationTask)
     ;
 
 Task("005-Publish")
@@ -69,7 +69,7 @@ Task("006-Sync-Content")
 // //////////////////////////////////////////////////
 
 Task("Default") // LocalDev
-    .IsDependentOn("000-Clean")
+    //.IsDependentOn("000-Clean")
     .IsDependentOn("001-Restore")
     .IsDependentOn("002-Build")
     // .IsDependentOn("003-Tests")

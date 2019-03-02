@@ -1,13 +1,17 @@
-﻿using System.Collections.Generic;
-using Amazon;
-using Amazon.DynamoDBv2;
-using Amazon.DynamoDBv2.DocumentModel;
-using Draniki.Foundation.DependencyInjection;
-using Draniki.Project.Draniki.Models;
-using Newtonsoft.Json;
-
-namespace Draniki.Project.Draniki.Providers
+﻿namespace Draniki.Project.Draniki.Providers
 {
+    using System.Collections.Generic;
+
+    using Amazon;
+    using Amazon.DynamoDBv2;
+    using Amazon.DynamoDBv2.DocumentModel;
+
+    using global::Draniki.Foundation.DependencyInjection;
+
+    using global::Draniki.Project.Draniki.Models;
+
+    using Newtonsoft.Json;
+
     [Service(typeof(ICommandsRepository))]
     public class CommandsRepository : ICommandsRepository
     {
@@ -47,7 +51,8 @@ namespace Draniki.Project.Draniki.Providers
                     var objectModel = JsonConvert.DeserializeObject<InteractionModel>(jsonObject);
                     interactions.Add(objectModel);
                 }
-            } while (!search.IsDone);
+            }
+            while (!search.IsDone);
 
             return interactions;
         }

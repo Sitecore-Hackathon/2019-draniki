@@ -14,7 +14,7 @@
                 resolve: context =>
                     {
                         var themeName = context.GetArgument<string>("themeName");
-                        var value = VisualizationModel.Singleton.Theme = themeName;
+                        var value = VisualizationModel.GetCurrent().Theme = themeName;
                         return value;
                     });
         }
