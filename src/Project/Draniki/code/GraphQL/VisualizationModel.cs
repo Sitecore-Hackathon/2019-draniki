@@ -30,7 +30,7 @@
         {
             get
             {
-                this.Theme = this.Theme + "!";
+                this.Theme = this.Theme;
                 return this.visualizationStream.AsObservable();
             }
         }
