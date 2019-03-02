@@ -251,6 +251,14 @@
     <Compile Include="Providers\CommandsRepository.cs" />
     <Compile Include="Providers\ICommandsRepository.cs" />
     <Compile Include="Temp\WhoAmISchemaProvider.cs" />
+    <Compile Include="GraphQL\GraphTypes\VisualizationMutationGraphType.cs" />
+    <Compile Include="GraphQL\GraphTypes\SubscriptionRootFieldType.cs" />
+    <Compile Include="GraphQL\GraphTypes\VisualizationMutationRootFieldType.cs" />
+    <Compile Include="GraphQL\GraphTypes\VisualizationRootQuery.cs" />
+    <Compile Include="GraphQL\GraphTypes\VisualizationGraphType.cs" />
+    <Compile Include="GraphQL\VisualizationModel.cs" />
+    <Compile Include="GraphQL\GraphTypes\VisualizationSubscriptionsGraphType.cs" />
+    <Compile Include="GraphQL\VisualizationSchemaProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="codegeneration.tmpl" />
@@ -261,6 +269,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Temp\" />
     <Folder Include="Views\Draniki\" />
   </ItemGroup>
   <ItemGroup>

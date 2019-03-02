@@ -2,14 +2,21 @@ import { Text } from '@sitecore-jss/sitecore-jss-react';
 import * as React from 'react';
 
 import Grid from '@material-ui/core/Grid';
+import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
 import { Card } from './components';
 import { ArticleListProps } from './models';
 
-export const ArticleList = ({ fields }: ArticleListProps) => {
+const styles = {
+  list: {
+    margin: '25px 0',
+  },
+};
+
+export const ArticleList = withStyles(styles)(({ classes, fields }: ArticleListProps) => {
   return (
-    <Grid container={true} direction="row" justify="center" alignItems="center">
+    <Grid className={classes.list} container={true} direction="row" justify="center" alignItems="center">
       <Grid item={true} xs={4} md={8} lg={12}>
         <Typography gutterBottom={true} variant="h5" component="h2">
           <Text field={fields.Title} />
@@ -24,4 +31,4 @@ export const ArticleList = ({ fields }: ArticleListProps) => {
       </Grid>
     </Grid>
   );
-};
+});

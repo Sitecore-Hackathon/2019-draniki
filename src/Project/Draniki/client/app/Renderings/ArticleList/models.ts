@@ -10,4 +10,6 @@ export interface ArticleListDataSourceItem {
   Articles: ItemList<ArticleDataSourceItem>;
 }
 
-export interface ArticleListProps extends Item<ArticleListDataSourceItem> {}
+export interface ArticleListProps extends Item<ArticleListDataSourceItem> {
+  classes: any;
+}

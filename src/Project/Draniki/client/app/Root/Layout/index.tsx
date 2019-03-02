@@ -1,6 +1,6 @@
 import { Placeholder } from '@sitecore-jss/sitecore-jss-react';
 
-import green from '@material-ui/core/colors/green';
+import cyan from '@material-ui/core/colors/cyan';
 import indigo from '@material-ui/core/colors/indigo';
 import red from '@material-ui/core/colors/red';
 import yellow from '@material-ui/core/colors/yellow';
@@ -11,7 +11,7 @@ import Helmet from 'react-helmet';
 
 const lightTheme = createMuiTheme({
   palette: {
-    primary: green,
+    primary: cyan,
     secondary: yellow,
   },
 });
