@@ -11,7 +11,8 @@ Examples of things to include are the following.
 **Category:** Enhancement to JSS to change a JSS component rendering behavior based on user's session data.
 
 The module aims to bring user experience of the Sitecore website to the new level. 
-Using verbal communication channel with Alexa application the components on the website can reflect the requests of the user.
+Using verbal communication channel with Alexa application the components on the website can reflect the requests of the user and change there presentation together with behaviour.
+The module presents just a small bit of what can be done through the voice operations: potential is to have commerce experience on the website using just verbal communication - review and buy products, view articles, play videos and ets.
 
 ## Pre-requisites
 
@@ -55,6 +56,17 @@ Remember you are using Markdown, you can provide code samples too:
   </sitecore>
 </configuration>
 ```
+
+ - Additional configuration of the AWS (Amazon Web Services) should be done to complete installation. The file with credentials for Amazon API must be put into folder C:\hackathon in file named credentials
+ The content of the file:
+ 
+[{profile_name}]
+aws_access_key_id = {accessKey}
+aws_secret_access_key = {secretKey}
+
+{profile_name} - development
+{accessKey} - Amazon Account access key
+{secretKey} - Amazon Account secret key
 
 ## Usage
 
