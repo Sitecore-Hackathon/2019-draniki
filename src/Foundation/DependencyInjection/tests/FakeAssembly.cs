@@ -1,4 +1,4 @@
-namespace 2019.draniki.Foundation.DependencyInjection.Tests
+namespace Draniki.Foundation.DependencyInjection.Tests
 {
     using System.Reflection;
     using System.Runtime.Serialization;

@@ -2,7 +2,7 @@
 ID: "60091aa5-1ec5-3e6d-3906-7b441795274e"
 Parent: "65c49969-f8a2-9f7f-581e-9a43b82fa5fc"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
-Path: /sitecore/system/Settings/2019.draniki/Feature
+Path: /sitecore/system/Settings/Draniki/Feature
 DB: master
 Languages:
 - Language: en

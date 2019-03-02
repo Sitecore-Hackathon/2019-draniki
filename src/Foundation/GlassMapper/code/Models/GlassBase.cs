@@ -7,7 +7,7 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Globalization;
 
-namespace 2019.draniki.Foundation.GlassMapper.Models
+namespace Draniki.Foundation.GlassMapper.Models
 {
     public abstract class GlassBase : IGlassBase
     {

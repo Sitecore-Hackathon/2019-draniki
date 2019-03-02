@@ -1,4 +1,4 @@
-describe('2019.draniki Sample Test', () => {
+describe('Draniki Sample Test', () => {
   test('sample', () => {
     expect(true).toBe(true);
   });

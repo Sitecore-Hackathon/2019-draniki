@@ -5,7 +5,7 @@ using Glass.Mapper.Maps;
 using Glass.Mapper.Sc.IoC;
 using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
 
-namespace 2019.draniki.Foundation.GlassMapper.App_Start
+namespace Draniki.Foundation.GlassMapper.App_Start
 {
     public static  class GlassMapperScCustom
     {

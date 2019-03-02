@@ -12,7 +12,7 @@
 // CONFIGURATION
 var physicalFileStore = @"..\serialization"; // the path to your serialization items
 var treeName = "Project.Draniki.Templates"; // the name of the configuration you want to code-generate
-var treePath = "/sitecore/templates/2019.draniki/Project/Draniki"; // the matching path in Sitecore for the configuration
+var treePath = "/sitecore/templates/Draniki/Project/Draniki"; // the matching path in Sitecore for the configuration
 
 var Tool = "RainbowCodeGeneration";
 var ToolVersion = "1.0";
@@ -31,7 +31,7 @@ templates = System.Linq.Enumerable.OrderBy(templates, x => x.Item.Path);
 // </auto-generated>
 //------------------------------------------------------------------------------
 // ReSharper disable InconsistentNaming
-namespace 2019.draniki.Project.Draniki.Models
+namespace Draniki.Project.Draniki.Models
 {
 	using System;
 	using System.Collections.Generic;
@@ -45,7 +45,7 @@ namespace 2019.draniki.Project.Draniki.Models
 	using Sitecore.Data;
 	using Sitecore.Data.Items;
 	using System.CodeDom.Compiler;
-	using 2019.draniki.Foundation.GlassMapper.Models;
+	using Draniki.Foundation.GlassMapper.Models;
 	
 <# try { #>
 <# foreach (var template in templates) { #>

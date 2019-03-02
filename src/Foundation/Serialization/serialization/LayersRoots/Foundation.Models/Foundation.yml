@@ -2,7 +2,7 @@
 ID: "43a23a73-7915-42f0-9eec-efb51c63587c"
 Parent: "127133a5-6109-1240-3471-d3e833bf635a"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
-Path: /sitecore/layout/Models/2019.draniki/Foundation
+Path: /sitecore/layout/Models/Draniki/Foundation
 DB: master
 Languages:
 - Language: en

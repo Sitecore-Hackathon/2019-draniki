@@ -1,4 +1,4 @@
-namespace 2019.draniki.Project.Draniki.Tests
+namespace Draniki.Project.Draniki.Tests
 {
     using Sitecore.FakeDb;
 

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 // ReSharper disable InconsistentNaming
-namespace 2019.draniki.Project.Draniki.Models
+namespace Draniki.Project.Draniki.Models
 {
     using System;
     using System.Collections.Generic;
@@ -21,5 +21,5 @@ namespace 2019.draniki.Project.Draniki.Models
     using Sitecore.Data;
     using Sitecore.Data.Items;
     using System.CodeDom.Compiler;
-    using 2019.draniki.Foundation.GlassMapper.Models;
+    using global::Draniki.Foundation.GlassMapper.Models;
 }

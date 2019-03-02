@@ -1,4 +1,4 @@
-namespace 2019.draniki.Foundation.GlassMapper.Infrastructure
+namespace Draniki.Foundation.GlassMapper.Infrastructure
 {
     using Glass.Mapper.Sc;
 

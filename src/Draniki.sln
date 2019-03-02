@@ -1,12 +1,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2020
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2019.draniki.Project.Draniki.Tests", "Project\Draniki\tests\2019.draniki.Project.Draniki.Tests.csproj", "{07847A5C-86D4-405D-8B6C-0689D32DA0E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Project.Draniki.Tests", "Project\Draniki\tests\Draniki.Project.Draniki.Tests.csproj", "{07847A5C-86D4-405D-8B6C-0689D32DA0E6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Draniki", "Draniki", "{A6678371-B9A3-4A15-B143-878827FEFD36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2019.draniki.Project.Draniki", "Project\Draniki\code\2019.draniki.Project.Draniki.csproj", "{346BAB60-0E57-45C1-8A20-F283A8BF44C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Project.Draniki", "Project\Draniki\code\Draniki.Project.Draniki.csproj", "{346BAB60-0E57-45C1-8A20-F283A8BF44C8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{DF3B36CF-6D1C-415A-8115-C806AAE79DB9}"
 	ProjectSection(SolutionItems) = preProject
@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{8B6B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{D7471233-EE41-4080-8C58-12D5033C644A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2019.draniki.Foundation.Serialization", "Foundation\Serialization\code\2019.draniki.Foundation.Serialization.csproj", "{BA492296-6396-413B-900B-AA9904768EF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Foundation.Serialization", "Foundation\Serialization\code\Draniki.Foundation.Serialization.csproj", "{BA492296-6396-413B-900B-AA9904768EF1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{655BAECA-6D12-436C-BCAF-91A2F8EEEF25}"
 EndProject
@@ -33,15 +33,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serializat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GlassMapper", "GlassMapper", "{859BF338-D2DE-405E-BCB5-08125EB6E465}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2019.draniki.Foundation.DependencyInjection", "Foundation\DependencyInjection\code\2019.draniki.Foundation.DependencyInjection.csproj", "{A5A4DCEB-88ED-4B5F-A06D-DBCBC828D45F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Foundation.DependencyInjection", "Foundation\DependencyInjection\code\Draniki.Foundation.DependencyInjection.csproj", "{A5A4DCEB-88ED-4B5F-A06D-DBCBC828D45F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2019.draniki.Foundation.DependencyInjection.Tests", "Foundation\DependencyInjection\tests\2019.draniki.Foundation.DependencyInjection.Tests.csproj", "{DA098052-8409-40B0-8B31-640B2400AAB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Foundation.DependencyInjection.Tests", "Foundation\DependencyInjection\tests\Draniki.Foundation.DependencyInjection.Tests.csproj", "{DA098052-8409-40B0-8B31-640B2400AAB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2019.draniki.Foundation.GlassMapper", "Foundation\GlassMapper\code\2019.draniki.Foundation.GlassMapper.csproj", "{0044B0CA-ABE2-4365-B1B2-1E347993B4AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Foundation.GlassMapper", "Foundation\GlassMapper\code\Draniki.Foundation.GlassMapper.csproj", "{0044B0CA-ABE2-4365-B1B2-1E347993B4AA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{7F113E29-7E16-4F09-B23D-DBD653AA62D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2019.draniki.Project.Shared", "Project\Shared\code\2019.draniki.Project.Shared.csproj", "{63DDE5EF-8C69-4897-90B6-504CBEE698FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Project.Shared", "Project\Shared\code\Draniki.Project.Shared.csproj", "{63DDE5EF-8C69-4897-90B6-504CBEE698FD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{8B3A5382-3A66-4956-A7F7-2241CCBA6401}"
 	ProjectSection(SolutionItems) = preProject
@@ -52,6 +52,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{00AF74
 	ProjectSection(SolutionItems) = preProject
 		..\documentation\images\deal-with-it.gif = ..\documentation\images\deal-with-it.gif
 		..\documentation\images\hackathon.png = ..\documentation\images\hackathon.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{77E33957-B112-453D-8D23-87BF298278AC}"
+	ProjectSection(SolutionItems) = preProject
+		cake.config = cake.config
 	EndProjectSection
 EndProject
 Global

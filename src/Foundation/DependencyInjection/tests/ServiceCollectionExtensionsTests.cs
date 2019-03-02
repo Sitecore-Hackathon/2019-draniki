@@ -1,10 +1,10 @@
-namespace 2019.draniki.Foundation.DependencyInjection.Tests
+namespace Draniki.Foundation.DependencyInjection.Tests
 {
     using Microsoft.Extensions.DependencyInjection;
 
     using NSubstitute;
 
-    using 2019.draniki.Foundation.DependencyInjection;
+    using Draniki.Foundation.DependencyInjection;
 
     using Xunit;
 
@@ -38,7 +38,7 @@ namespace 2019.draniki.Foundation.DependencyInjection.Tests
         [Theory]
         [InlineData("*AnotherSimpleTestClass")]
         [InlineData("*Another*")]
-        [InlineData("2019.draniki.*Another*")]
+        [InlineData("Draniki.*Another*")]
         public void AddByWildcard_ValidTypes_ServicesCollectionWihtMathingType(string pattern)
         {
             IServiceCollection serviceCollection = new ServiceCollection();

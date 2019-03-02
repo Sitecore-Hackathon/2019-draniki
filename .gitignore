@@ -321,3 +321,4 @@ ASALocalRun/
 
 .vagrant
 license.xml
+/src/tools

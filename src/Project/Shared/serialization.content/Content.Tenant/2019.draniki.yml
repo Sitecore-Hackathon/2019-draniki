@@ -2,7 +2,7 @@
 ID: "331a1156-5153-f535-68b4-46ca0675d4a1"
 Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
-Path: /sitecore/content/2019.draniki
+Path: /sitecore/content/Draniki
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -11,7 +11,7 @@ SharedFields:
 - ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
   Hint: __Security
   Value: |
-    ar|2019.draniki\Author|pe|+item:create|+item:read|+item:rename|+item:delete|+item:write|^*|pd|+item:create|+item:read|+item:rename|+item:delete|+item:write|^*|
+    ar|Draniki\Author|pe|+item:create|+item:read|+item:rename|+item:delete|+item:write|^*|pd|+item:create|+item:read|+item:rename|+item:delete|+item:write|^*|
 Languages:
 - Language: en
   Versions:

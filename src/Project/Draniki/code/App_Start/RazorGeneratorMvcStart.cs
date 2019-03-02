@@ -3,9 +3,9 @@ using System.Web.Mvc;
 using System.Web.WebPages;
 using RazorGenerator.Mvc;
 
-[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(2019.draniki.Project.Draniki.RazorGeneratorMvcStart), "Start")]
+[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(Draniki.Project.Draniki.RazorGeneratorMvcStart), "Start")]
 
-namespace 2019.draniki.Project.Draniki
+namespace Draniki.Project.Draniki
 {
     public static class RazorGeneratorMvcStart
     {

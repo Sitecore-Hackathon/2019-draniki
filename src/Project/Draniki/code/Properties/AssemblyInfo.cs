@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("2019.draniki.Project.Draniki")]
-[assembly: AssemblyDescription("2019.draniki.Project.Draniki")]
+[assembly: AssemblyTitle("Draniki.Project.Draniki")]
+[assembly: AssemblyDescription("Draniki.Project.Draniki")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("EPAM Systems")]
-[assembly: AssemblyProduct("2019.draniki.Project.Draniki")]
+[assembly: AssemblyProduct("Draniki.Project.Draniki")]
 [assembly: AssemblyCopyright("Copyright �  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

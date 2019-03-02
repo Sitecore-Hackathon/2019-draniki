@@ -14,8 +14,8 @@
     <ProjectTypeGuids>{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>2019.draniki.Foundation.DependencyInjection.Tests</RootNamespace>
-    <AssemblyName>2019.draniki.Foundation.DependencyInjection.Tests</AssemblyName>
+    <RootNamespace>Draniki.Foundation.DependencyInjection.Tests</RootNamespace>
+    <AssemblyName>Draniki.Foundation.DependencyInjection.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -208,9 +208,9 @@
     <Analyzer Include="..\..\..\packages\xunit.analyzers.0.8.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\code\2019.draniki.Foundation.DependencyInjection.csproj">
+    <ProjectReference Include="..\code\Draniki.Foundation.DependencyInjection.csproj">
       <Project>{a5a4dceb-88ed-4b5f-a06d-dbcbc828d45f}</Project>
-      <Name>2019.draniki.Foundation.DependencyInjection</Name>
+      <Name>Draniki.Foundation.DependencyInjection</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

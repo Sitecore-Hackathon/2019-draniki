@@ -17,7 +17,7 @@ Sitecore.Constants.SetNames();
 Sitecore.Parameters.InitParams(
     context: Context,
     msBuildToolVersion: MSBuildToolVersion.Default,
-    solutionName: "2019.draniki",
+    solutionName: "Draniki",
     scSiteUrl: "https://sc9.local" // default URL exposed from the box
 );
 

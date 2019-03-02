@@ -1,4 +1,4 @@
-namespace 2019.draniki.Foundation.DependencyInjection.Infrastructure
+namespace Draniki.Foundation.DependencyInjection.Infrastructure
 {
     using System.Web.Http.Controllers;
     using System.Web.Mvc;
