@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Draniki.Feature.AWS.Models
+namespace Draniki.Project.Draniki.Models
 {
     public class InteractionModel
     {

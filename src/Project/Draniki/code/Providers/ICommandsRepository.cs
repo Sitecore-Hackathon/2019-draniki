@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Draniki.Feature.AWS.Models;
+using Draniki.Project.Draniki.Models;
 
-namespace Draniki.Feature.AWS.Providers
+namespace Draniki.Project.Draniki.Providers
 {
     public interface ICommandsRepository
     {

@@ -55,10 +55,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		cake.config = cake.config
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AWS", "AWS", "{1CAA69DF-8E56-41BD-BCD0-0F0B0E8CC9DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draniki.Feature.AWS", "Feature\AWS\code\Draniki.Feature.AWS\Draniki.Feature.AWS.csproj", "{3133E3DA-CA36-498D-9B02-3D692D570432}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,10 +81,6 @@ Global
 		{B15FB4E9-4007-46C0-8882-A5ECCF5B9C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B15FB4E9-4007-46C0-8882-A5ECCF5B9C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B15FB4E9-4007-46C0-8882-A5ECCF5B9C9E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3133E3DA-CA36-498D-9B02-3D692D570432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3133E3DA-CA36-498D-9B02-3D692D570432}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3133E3DA-CA36-498D-9B02-3D692D570432}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3133E3DA-CA36-498D-9B02-3D692D570432}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,11 +97,9 @@ Global
 		{7F113E29-7E16-4F09-B23D-DBD653AA62D9} = {D7471233-EE41-4080-8C58-12D5033C644A}
 		{B15FB4E9-4007-46C0-8882-A5ECCF5B9C9E} = {7F113E29-7E16-4F09-B23D-DBD653AA62D9}
 		{00AF7430-36F8-4058-8632-7A7518D0476E} = {8B3A5382-3A66-4956-A7F7-2241CCBA6401}
-		{1CAA69DF-8E56-41BD-BCD0-0F0B0E8CC9DD} = {8B6B8128-AD7B-4331-9DC0-0AFE37FC45E1}
-		{3133E3DA-CA36-498D-9B02-3D692D570432} = {1CAA69DF-8E56-41BD-BCD0-0F0B0E8CC9DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {95FD0DB7-903B-4B29-9409-FDAEB8BE8F71}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {95FD0DB7-903B-4B29-9409-FDAEB8BE8F71}
 	EndGlobalSection
 EndGlobal

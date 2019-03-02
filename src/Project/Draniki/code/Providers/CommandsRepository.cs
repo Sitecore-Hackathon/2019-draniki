@@ -2,11 +2,11 @@
 using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DocumentModel;
-using Draniki.Feature.AWS.Models;
 using Draniki.Foundation.DependencyInjection;
+using Draniki.Project.Draniki.Models;
 using Newtonsoft.Json;
 
-namespace Draniki.Feature.AWS.Providers
+namespace Draniki.Project.Draniki.Providers
 {
     [Service(typeof(ICommandsRepository))]
     public class CommandsRepository : ICommandsRepository

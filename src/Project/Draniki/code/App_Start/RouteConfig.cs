@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Draniki.Feature.AWS.App_Start
+namespace Draniki.Project.Draniki
 {
     public static class RouteConfig
     {
