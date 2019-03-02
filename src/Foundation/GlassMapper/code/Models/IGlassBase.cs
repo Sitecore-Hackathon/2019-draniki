@@ -1,13 +1,15 @@
-using System;
-using System.Collections.Generic;
-using Glass.Mapper.Sc.Configuration;
-using Glass.Mapper.Sc.Configuration.Attributes;
-using Sitecore.Data;
-using Sitecore.Data.Items;
-using Sitecore.Globalization;
-
 namespace Draniki.Foundation.GlassMapper.Models
 {
+    using System;
+    using System.Collections.Generic;
+
+    using Glass.Mapper.Sc.Configuration;
+    using Glass.Mapper.Sc.Configuration.Attributes;
+
+    using Sitecore.Data;
+    using Sitecore.Data.Items;
+    using Sitecore.Globalization;
+
     public interface IGlassBase
     {
         [SitecoreId]
