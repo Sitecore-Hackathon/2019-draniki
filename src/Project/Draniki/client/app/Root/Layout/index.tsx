@@ -1,4 +1,5 @@
 import { Placeholder } from '@sitecore-jss/sitecore-jss-react';
+import { Query } from 'react-apollo';
 
 import cyan from '@material-ui/core/colors/cyan';
 import indigo from '@material-ui/core/colors/indigo';
@@ -8,6 +9,8 @@ import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 
 import * as React from 'react';
 import Helmet from 'react-helmet';
+
+import themeQuery from './themeQuery.graphql';
 
 const lightTheme = createMuiTheme({
   palette: {
@@ -24,13 +27,31 @@ const darkTheme = createMuiTheme({
 });
 
 export const Layout = ({ route }: any) => {
-  const theme = !!route ? darkTheme : lightTheme;
-
   return (
-    <MuiThemeProvider theme={theme}>
-      <Helmet title={route.name} />
+    <Query query={themeQuery}>
+      {({ data, loading, error }) => {
+        let currentTheme = darkTheme;
 
-      <Placeholder name="main" rendering={route} />
-    </MuiThemeProvider>
+        if (!loading && data) {
+          const { visualization } = data;
+
+          if (visualization.theme === 'light') {
+            currentTheme = lightTheme;
+          }
+
+          if (visualization.theme === 'dark') {
+            currentTheme = darkTheme;
+          }
+        }
+
+        return (
+          <MuiThemeProvider theme={currentTheme}>
+            <Helmet title={route.name} />
+
+            <Placeholder name="main" rendering={route} />
+          </MuiThemeProvider>
+        );
+      }}
+    </Query>
   );
 };

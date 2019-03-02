@@ -26,7 +26,11 @@
     "strictNullChecks": false,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "typeRoots": [
+        "node_modules/@types",
+        "Project/Draniki/client/typings"
+    ]
   },
   "include": [
     "Foundation/*/client/**/*",

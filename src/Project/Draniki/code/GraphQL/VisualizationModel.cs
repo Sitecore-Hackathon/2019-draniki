@@ -23,7 +23,7 @@
 
         private readonly ISubject<VisualizationModel> visualizationStream = new ReplaySubject<VisualizationModel>(1);
 
-        private string theme = "Light";
+        private string theme = "light";
 
         private string subscriptionEmail = null;
 
