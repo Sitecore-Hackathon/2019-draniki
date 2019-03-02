@@ -8,25 +8,33 @@ Examples of things to include are the following.
 
 ## Summary
 
-**Category:** Hackathon Category
+**Category:** Enhancement to JSS to change a JSS component rendering behavior based on user's session data.
 
-What is the purpose of your module? What problem does it solve and how does it do that?
+The module aims to bring user experience of the Sitecore website to the new level. 
+Using verbal communication channel with Alexa application the components on the website can reflect the requests of the user.
 
 ## Pre-requisites
 
-Does your module rely on other Sitecore modules or frameworks?
+* VirtualBox 5.2.4+ - https://www.virtualbox.org/wiki/Downloads
+* VirtualBox Extension Pack
+* Vagrant 2.0.1+ - https://www.vagrantup.com/downloads.html
+* Vagrant plugin vagrant-hostmanager
+    ```vagrant plugin install vagrant-hostmanager```
+* Visual Studio 2017 Professional
+* Resharper
+* StyleCop for ReSharper - https://github.com/StyleCop/StyleCop.ReSharper
+* NodeJS 8+/npm 5+ - https://nodejs.org/en/
 
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+### Installation
 
-## Installation
-
-Provide detailed instructions on how to install the module, and include screenshots where necessary.
-
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
+1. Run `vagrant up` under the *(gitroot)* folder with administrator privileges. It will download the box image and configure the enviroment.
+1. Install Sitecore JavaScript Services package - https://jss.sitecore.net/#/setup/jss-server-install?id=jss-server-install
+1. Install Node.JS
+1. Open shared folder (`\\sc9.local\c$\`) with file explorer and save credentials. You can check them in Control Panel\User Accounts\Credential Manager under Windows Credentials tab.
+*Creds*: vagrant/vagrant
+1. Copy Sitecore licence to *(gitroot)* folder
+1. Run `./build.ps1` in PowerShell with administrator privileges. It is required only for first time to download cake. The next deployments can be done from Visual Studio.
+1. Republish Sitecore content (Unicorn should publish synced data but in case of any issues better to republish).
 
 ## Configuration
 
