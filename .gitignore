@@ -320,6 +320,21 @@ ASALocalRun/
 *.binlog
 
 .vagrant
+
+# Including all the Libs files
+!libs/**/*
+
+# Sitecore license file
 license.xml
+
+# Cake artifacts
 /src/tools
+
+# Output and CI artifacts
 /output
+/artifacts
+
+# Front-end build
+/src/Project/**/*.bundle.js
+/src/Project/*/client/build/*
+/src/Project/*/code/dist/**
