@@ -19,9 +19,13 @@
 
         private readonly ISubject<string> themeStream = new ReplaySubject<string>(1);
 
+        private readonly ISubject<string> subscriptionEmailStream = new ReplaySubject<string>(1);
+
         private readonly ISubject<VisualizationModel> visualizationStream = new ReplaySubject<VisualizationModel>(1);
 
         private string theme = "Light";
+
+        private string subscriptionEmail = null;
 
         public string Theme
         {
@@ -34,7 +38,20 @@
             }
         }
 
+        public string SubscriptionEmail
+        {
+            get => this.subscriptionEmail;
+            set
+            {
+                this.subscriptionEmail = value;
+                this.visualizationStream.OnNext(this);
+                this.themeStream.OnNext(value);
+            }
+        }
+
         public IObservable<string> ThemeObservable => this.themeStream.AsObservable();
+
+        public IObservable<string> SubscriptionEmailObservable => this.subscriptionEmailStream.AsObservable();
 
         public IObservable<VisualizationModel> ModelObservable
         {

@@ -16,21 +16,37 @@
               {
                   Name = "themeChanged",
                   Type = typeof(StringGraphType),
-                  Resolver = new FuncFieldResolver<string>(this.ResolveMessage),
-                  Subscriber = new EventStreamResolver<string>(this.Subscribe)
+                  Resolver = new FuncFieldResolver<string>(this.ResolveTheme),
+                  Subscriber = new EventStreamResolver<string>(this.SubscribeTheme)
+              });
+
+            this.AddField(new EventStreamFieldType
+              {
+                  Name = "subscriptionEmailChanged",
+                  Type = typeof(StringGraphType),
+                  Resolver = new FuncFieldResolver<string>(this.ResolveEmail),
+                  Subscriber = new EventStreamResolver<string>(this.SubscribeEmail)
               });
         }
 
-        private string ResolveMessage(ResolveFieldContext context)
+        private string ResolveTheme(ResolveFieldContext context)
         {
-            var message = VisualizationModel.GetCurrent().Theme;
-
-            return message;
+            return VisualizationModel.GetCurrent().Theme;
         }
 
-        private IObservable<string> Subscribe(ResolveEventStreamContext context)
+        private IObservable<string> SubscribeTheme(ResolveEventStreamContext context)
         {
             return VisualizationModel.GetCurrent().ThemeObservable;
+        }
+
+        private string ResolveEmail(ResolveFieldContext context)
+        {
+            return VisualizationModel.GetCurrent().SubscriptionEmail;
+        }
+
+        private IObservable<string> SubscribeEmail(ResolveEventStreamContext context)
+        {
+            return VisualizationModel.GetCurrent().SubscriptionEmailObservable;
         }
     }
 }

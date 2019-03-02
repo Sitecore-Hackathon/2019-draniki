@@ -1,9 +1,10 @@
-﻿using System.Web.Routing;
-using Sitecore.Diagnostics;
-using Sitecore.Pipelines;
-
-namespace Draniki.Project.Draniki.Pipelines
+﻿namespace Draniki.Project.Draniki.Pipelines
 {
+    using System.Web.Routing;
+
+    using Sitecore.Diagnostics;
+    using Sitecore.Pipelines;
+
     public class InitializeRoutes
     {
         public void Process(PipelineArgs args)

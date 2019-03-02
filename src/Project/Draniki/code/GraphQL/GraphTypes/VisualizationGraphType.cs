@@ -11,7 +11,9 @@
             this.Name = "DranikiVisualization";
 
             this.Field<StringGraphType>("theme", resolve: context => context.Source.Theme);
-        
+
+            this.Field<StringGraphType>("subscriptionEmail", resolve: context => context.Source.SubscriptionEmail);
+
             // note that graph types can resolve other graph types; for example
             // it would be possible to add a `lockedItems` field here that would
             // resolve to an `Item[]` and map it onto `ListGraphType<ItemInterfaceGraphType>`
