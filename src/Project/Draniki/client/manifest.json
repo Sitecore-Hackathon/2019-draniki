@@ -1,0 +1,21 @@
+{
+  "name": "GEHC",
+  
+  "env": [
+    {
+      "name": "local",
+      "url": "https://gehc.local",
+      "apiKey": "{D24C87E5-C517-4DA1-8FD3-031439D00014}"
+    },
+    {
+      "name": "dev",
+      "url": "https://gehcgamlvgdevuseasc0101-cd.azurewebsites.net",
+      "apiKey": "{D24C87E5-C517-4DA1-8FD3-031439D00014}"
+    },
+    {
+      "name": "qa",
+      "url": "https://gehcgamlvgqauseasc0101-cd.azurewebsites.net",
+      "apiKey": "{D24C87E5-C517-4DA1-8FD3-031439D00014}"
+    }
+  ]
+}

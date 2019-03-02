@@ -18,12 +18,11 @@ Sitecore.Parameters.InitParams(
     context: Context,
     msBuildToolVersion: MSBuildToolVersion.Default,
     solutionName: "Draniki",
-    scSiteUrl: "https://sc9.local" // default URL exposed from the box
+    scSiteUrl: "http://sc9.local", // default URL exposed from the box
+    publishingTargetDir: "\\\\sc9.local\\c$\\inetpub\\wwwroot\\sc9.local",
+    xUnitTestsCoverageExcludeAttributeFilters: "*ExcludeFromCodeCoverage*",
+    xUnitTestsCoverageExcludeFileFilters: "*.Generated.cs"
 );
-
-// //////////////////////////////////////////////////
-// Tasks
-// //////////////////////////////////////////////////
 
 Task("000-Clean")
     .IsDependentOn(Sitecore.Tasks.ConfigureToolsTaskName)
