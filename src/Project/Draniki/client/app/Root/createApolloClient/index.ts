@@ -19,7 +19,6 @@ export const createApolloClient = ({ uri }: { uri: string }) => {
     options: {
       reconnect: true,
     },
-    // TODO: remove hard-coded ws url
     uri: 'ws://2019-draniki.local/sitecore/api/graph/draniki?sc_apikey=9d34ec07-b4ce-4283-b037-c215efe3ea88',
   });
 
