@@ -1,11 +1,3 @@
-# Documentation
-
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
-Examples of things to include are the following.
-
 ## Summary
 
 **Category:** Enhancement to JSS to change a JSS component rendering behavior based on user's session data.
@@ -178,19 +170,17 @@ ASK CLI **will create the skill and the lambda function for you**. The Lambda fu
 
 ## Usage
 
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
+### Alexa simulator
+![Alexa](images/alexa.png "Alexa")
 
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+### WebSite with dark theme
+![Dark Theme](images/dark-theme-ui.png?raw=true "Dark Theme")
 
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
+### WebSite with light theme
+![Light Theme](images/light-theme-ui.png?raw=true "Light Theme")
 
-You can embed images of different formats too:
-
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
+### Dialog with email
+![Dialog](images/dialog-with-email.png?raw=true "Dialog")
 
 ## Video
 
