@@ -250,7 +250,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\CommandsRepository.cs" />
     <Compile Include="Providers\ICommandsRepository.cs" />
-    <Compile Include="Temp\WhoAmISchemaProvider.cs" />
     <Compile Include="GraphQL\GraphTypes\VisualizationMutationGraphType.cs" />
     <Compile Include="GraphQL\GraphTypes\SubscriptionRootFieldType.cs" />
     <Compile Include="GraphQL\GraphTypes\VisualizationMutationRootFieldType.cs" />
@@ -269,8 +268,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
     <Folder Include="Temp\" />
     <Folder Include="Views\Draniki\" />
   </ItemGroup>
