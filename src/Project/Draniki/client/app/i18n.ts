@@ -2,6 +2,8 @@ import i18n, { InitOptions } from 'i18next';
 import i18nXhr from 'i18next-xhr-backend';
 import { reactI18nextModule } from 'react-i18next';
 
+declare const process: any;
+
 /**
  * Initializes the i18next library to provide a translation dictionary to the app.
  * If your app is not multilingual, this file and references to it can be removed.

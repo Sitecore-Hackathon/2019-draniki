@@ -1,3 +1,5 @@
+declare const process: any;
+
 import { applyMiddleware, compose, createStore, DeepPartial, Middleware, Store } from 'redux';
 import createSagaMiddleware, { END, SagaMiddleware } from 'redux-saga';
 

@@ -2,12 +2,15 @@
 ID: "9c3760ea-5278-4840-a8ad-36edd35797f8"
 Parent: "f6924a85-7522-4552-a200-80e7825eecb8"
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
-Path: /sitecore/layout/Renderings/Draniki/Project/Draniki/Rendering
+Path: /sitecore/layout/Renderings/Draniki/Project/Draniki/News Feed Subscription
 DB: master
 SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
   Hint: componentName
-  Value: Rendering
+  Value: News Feed Subscription
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Draniki/Project/Draniki/DataSources/News Feed Subscription
 Languages:
 - Language: en
   Versions:

@@ -1,0 +1,14 @@
+﻿---
+ID: "30edb3f7-cd0d-43d6-8eee-132b6ea0438f"
+Parent: "7174adb0-6e20-4ad0-b5d2-3bf43de2e9c1"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Draniki/Project/Draniki/DataSources/News Feed Subscription/Data
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190302T154450Z

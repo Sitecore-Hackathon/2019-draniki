@@ -1,0 +1,14 @@
+﻿---
+ID: "2d0217ca-dd32-45fb-bc77-2f6833949e27"
+Parent: "299052a0-bd67-44e1-acd4-60e5f0e8e18a"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Draniki/Project/Draniki/DataSources/Article List/Data
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190302T154418Z
