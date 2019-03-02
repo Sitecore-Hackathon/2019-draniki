@@ -221,6 +221,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="codegeneration.tmpl" />
+    <Content Include="App_Config\Include\Project\Draniki.Project.Draniki.Site.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

@@ -1,0 +1,33 @@
+﻿---
+ID: "e3eecb8b-7cca-43cd-a896-e10d32f07fd5"
+Parent: "7c89578e-1728-452d-bae4-7704a9a422a3"
+Template: "b36ba9fd-0dc0-49c8-bea2-e55d70e6af28"
+Path: /sitecore/content/Draniki/Draniki/Home
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{3012B863-D1A7-4652-A4AA-9615CBE3E72D}">
+        <r
+          id="{9C3760EA-5278-4840-A8AD-36EDD35797F8}"
+          ph="main"
+          uid="{35765F47-0E1B-4FE0-8DD6-7CBDFB9C2BE6}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190302T122725Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
