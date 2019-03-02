@@ -1,0 +1,73 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+project = '2019-draniki'
+vagrant_root = File.dirname(__FILE__)
+host_serialization_root = "#{vagrant_root}/src" # host opprating system, which is hosting Vagrant and VirtualBox
+guest_serialization_root = '/inetpub/wwwroot/sc9.local/App_Data/unicorn' # VM that you creating
+
+Vagrant.configure('2') do |config|
+  config.vm.box = 'w16s-sc910'
+  config.vm.box_url = ['\\\\EPBYMINW5711\\shared\\sitecore\\boxes\\w16s-sc910.box']
+
+  # Disable automatic box update checking. If you disable this, then
+  # boxes will only be checked for updates when the user runs
+  # `vagrant box outdated`. This is not recommended.
+  # config.vm.box_check_update = false
+
+  # Create a forwarded port mapping which allows access to a specific port
+  # within the machine from a port on the host machine. In the example below,
+  # accessing 'localhost:8080' will access port 80 on the guest machine.
+  # NOTE: This will enable public access to the opened port
+  # config.vm.network 'forwarded_port', guest: 80, host: 8080
+
+  # Create a forwarded port mapping which allows access to a specific port
+  # within the machine from a port on the host machine and only allow access
+  # via 127.0.0.1 to disable public access
+  # config.vm.network 'forwarded_port', guest: 80, host: 8080, host_ip: '127.0.0.1'
+  config.vm.network :forwarded_port, guest: 80, host: 80, auto_correct: true # http
+  config.vm.network :forwarded_port, guest: 443, host: 443, auto_correct: true # https
+  config.vm.network :forwarded_port, guest: 1433, host: 1433, auto_correct: true # sql
+  config.vm.network :forwarded_port, guest: 8983, host: 8983, auto_correct: true # solr
+  config.vm.network :forwarded_port, guest: 4020, host: 4020, auto_correct: true # vs remote debugger
+  config.vm.network :forwarded_port, guest: 9222, host: 9222, auto_correct: true # v8 remote debugger
+  config.vm.network :forwarded_port, guest: 9229, host: 9229, auto_correct: true # v8 remote debugger
+
+  # Create a private network, which allows host-only access to the machine
+  # using a specific IP.
+  config.vm.network 'private_network', ip: '192.168.50.6', auto_config: true
+  config.vm.hostname = "#{ENV['COMPUTERNAME']}T#{project}"
+  config.hostmanager.aliases = %w(sc9.local sc9.xconnect sc9.identityserver 2019-draniki.local)
+
+  config.hostmanager.enabled = true
+  config.hostmanager.manage_host = true
+  config.hostmanager.ignore_private_ip = false
+
+  config.vm.synced_folder "#{host_serialization_root}", "#{guest_serialization_root}"
+
+  config.vm.provider 'virtualbox' do |vb|
+    vb.name = '2019-draniki'
+
+    # Display the VirtualBox GUI when booting the machine
+    vb.gui = false
+    vb.customize ['modifyvm', :id, '--vram', '100']
+
+    # reduce size in case of multiple VMs
+    vb.linked_clone = true
+
+    # Customize the amount of memory on the VM:
+    vb.cpus = 2
+    vb.memory = '4096'
+
+    # clipboard
+    vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
+    vb.customize ['modifyvm', :id, '--draganddrop', 'bidirectional']
+
+    # network
+    vb.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
+
+    # resolution
+    # vb.customize ['setextradata', :id, 'GUI/ScaleFactor', '1.5']
+    # vb.customize ['setextradata', :id, 'GUI/MaxGuestResolution', '1920,1080']
+  end
+end

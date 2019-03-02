@@ -1,0 +1,14 @@
+---
+ID: "8cb0cdb2-436e-f6eb-5bba-ff52255f9064"
+Parent: "eb3c694e-cb10-daff-fd4c-a4f243026d94"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/2019.draniki/Foundation
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170501T174734Z
